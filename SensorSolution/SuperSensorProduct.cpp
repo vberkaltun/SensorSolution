@@ -22,11 +22,11 @@ void SuperSensorProduct::addSensor(ISensorBase sensor)
 
 void SuperSensorProduct::printProperties()
 {
-	std::cout << "SuperSensor name: " << _name << ", SensorCount: " << _sensorList.size() << "." << std::endl;
+	std::cout << "  SuperSensor name: " << _name << ", SensorCount: " << _sensorList.size() << "." << std::endl;
 
 	for (int index = 0; index < _sensorList.size(); index++)
 	{
-		std::cout << "";
+		std::cout << "    ";
 		_sensorList[index].printProperties();
 	}
 }

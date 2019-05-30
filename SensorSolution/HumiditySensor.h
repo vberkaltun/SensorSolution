@@ -10,6 +10,8 @@ public:
 	HumiditySensor(std::string name);
 	HumiditySensor(std::string name, connectionType type);
 	~HumiditySensor();
+
+	void printProperties();
 };
 
 #endif
