@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ISensorBase" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhAAIAAAAAAAACCAAAIAwIAAAAAAABAAAEAAAAAgBAA=</HashCode>
+      <FileName>ISensorBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SuperSensorProduct">
+    <Position X="12" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAACAAAAAAAAAAAAAARAIAAAAAAAAAAQ=</HashCode>
+      <FileName>SuperSensorProduct.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HumiditySensor" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HumiditySensor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PressureSensor" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PressureSensor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TemperatureSensor" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>TemperatureSensor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindDirectionSensor" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WindDirectionSensor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindSpeedSensor" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WindSpeedSensor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

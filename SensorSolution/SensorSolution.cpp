@@ -67,8 +67,14 @@ void selectMenuItem(char selector)
 		// List super sensor data
 		if (superSensorList.size() == 0)
 			std::cout << "  SuperSensor list is empty!" << std::endl;
-		else for (int index = 0; index < superSensorList.size(); index++)
-			superSensorList[index].printProperties();
+		else
+		{
+			for (int index = 0; index < superSensorList.size(); index++)
+			{
+				std::cout << "  " << index + 1 << ". ";
+				superSensorList[index].printProperties();
+			}
+		}
 		break;
 
 	case '4':
@@ -121,7 +127,7 @@ ISensorBase::connectionType selectConnectionType()
 
 	case '0':
 	default:
-		return ISensorBase::Idle;
+		return ISensorBase::C_Idle;
 	}
 }
 
@@ -145,7 +151,7 @@ ISensorBase generateSensor(char selector)
 
 	ISensorBase::connectionType type = selectConnectionType();
 
-	if(type == ISensorBase::Idle)
+	if (type == ISensorBase::C_Idle)
 	{
 		switch (selector)
 		{
@@ -212,7 +218,9 @@ void generateSuperSensor()
 		if (sensor[0] == '0')
 			break;
 
-		superSensor.addSensor(generateSensor(sensor[0]));
+		ISensorBase sensorBase = generateSensor(sensor[0]);
+		sensorBase.Connect();
+		superSensor.addSensor(sensorBase);
 	}
 
 	superSensorList.push_back(superSensor);
